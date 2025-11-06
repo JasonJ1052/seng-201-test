@@ -1,0 +1,36 @@
+1) Problem description:
+Prompt the user to enter the name of a text file. Each line of the text file has the name of a species of bird. Count the number of times each species appears in the text file. Print out the bird species and their counts. 
+
+2) Input format
+We need a filename in the current working directory as a string. 
+The other input is the text file identifies by the filename. The name of the species of birds is on each line and separated by a newline character. The file should be in the working directory and its name must end in ".txt", otherwise, the program cannot process the file.
+
+We have to assume that each of text corresponds to a bird species. If the user provides an invalid file, including:
+    - data entry mistakes, such as entering "Baltimore Oriole akjbakd1243"
+    - or putting two species on one line
+    - or naming a file that contains non-test data.
+We cannot do anything about that ahead of time. The program will probably error out. 
+
+3) Output format:
+Print each unique bird species (String) followed by the count (integer) to the console.
+
+4) Exceptional conditions:
+- The user could enter a filename that doesn't exist.
+- The file might not have any text in it.
+- The file does not have the .txt extension. 
+
+5) Input samples:
+"birds_small.txt" is an example of a valid filename assuming it exists.
+The contents of the file would look like this:
+    White-eared Hummingbird
+    Townsend's Solitaire
+    Townsend's Solitaire
+    Yellow-fronted Canary
+    Chestnut-fronted Macaw
+
+6) Output samples
+The following is printed to the console: 
+    White-eared Hummingbird 1
+    Townsend's Solitaire 2
+    Yellow-fronted Canary 1
+    Chestnut-fronted Macaw 1
