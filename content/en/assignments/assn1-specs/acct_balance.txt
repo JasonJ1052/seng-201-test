@@ -1,0 +1,36 @@
+1) Problem outline 
+
+Bank records are stored in a text file. Users of the program can search for an account number and retrieve the balance of the account. The user can search for account balances until they quit the program.
+
+
+2) Input format
+Input is a text file in CSV format (comma separated value). Users will be prompted to type an account number in the console. Account numbers are 9-digit integers.
+
+
+3) Sample input values (include both valid inputs and inputs that create exceptional conditions)
+Example input file contents:
+850123456,Bob Smith,500.00
+850123444,Turkey Leg,10.99
+850999999,Hash Brown,91643.88
+- 850123456 is entered into the input console.
+Exceptional inputs:
+    - User enters the account number 123 into search.
+    - User enter "abc" to search.
+    - An input file containing only "850123456,Bob Smith". It is missing the balance.
+
+
+4) Exceptional conditions
+- Exc1: the user enters an account number that doesn't exist.
+- Exc2: the user enters an account number that is not an integer.
+- Exc3: the bank records text file cannot be read (missing, corrupted)
+
+
+5) Output format
+The balance of the account is printed to the screen.
+
+
+6) Sample output values (include the sample output for each sample input)
+- "Account 850123456 has a balance of $500.00."
+- Exc1: "Error: That account number does not exist. Try again."
+- Exc2: "Error: Account numbers are 9-digit integers only."
+- Exc3: "Error: Problem reading the bank records. Please check that the file is present and in the correct format."

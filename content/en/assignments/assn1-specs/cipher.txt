@@ -1,0 +1,45 @@
+1) Problem outline 
+Write a program that computes the Caesar cipher of plain text entered by the user. The user also inputs the shift value.
+A Caesar cipher is computed by assigning the values 0-25 to the letters A-Z. 
+To encrypt, add the shift value to each letter value and print the letter in the shited position.
+Mathematically:
+    - x: the assigned value of the letter
+    - n: the shift value
+    - Encrypt(x) = (x + n) mod 26
+
+
+2) Input format
+The user enters the shift value as an integer from 0 to 25. The user then enters a string to encrypt that must be all letters. 
+
+3) Sample input values (include both valid inputs and inputs that create exceptional conditions)
+- Example 1
+    - Shift: 3
+    - plaintext: WE RIDE AT MIDNIGHT
+- Example 2
+    - Shift: 5
+    - plaintext: WE RIDE AT MIDNIGHT
+- Example 3
+    - Shift: 5
+    - plaintext: FOURTH MEAL
+- Exceptional inputs:
+    - Shift: A
+    - Shift: 32
+    - plaintext: No punctionation.
+
+
+4) Exceptional conditions
+- Exc1: The user enters a non-integer value for the shift
+- Exc2: The user enters an integer value < 0 or > 25 for the shift
+- Exc3: The user enters a plaintext string containing something other than alphabetic characters.
+
+5) Output format
+The encrypted ciphertext is printed to the screen.
+
+
+6) Sample output values (include the sample output for each sample input)
+- Example 1: ZH ULGH DW PLGQLJKW
+- Example 2: BJ WNIJ FY RNISNLMY
+- Example 3: KTZWYM RJFQ
+- Exc1: "Error: Shift values can only be integers from 0-25. Try again."
+- Exc2: "Error: Shift values can only be integers from 0-25. Try again."
+- Exc3: "Error: Only alphabetic characters are allowed (a-z and A-Z). Try again."
