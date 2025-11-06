@@ -1,0 +1,22 @@
+### Put your names below. Do not remove the section headers.
+
+Partner 1 name:
+Partner 2 name:
+
+1) Problem outline – what’s the purpose of the program? Any calculations?
+
+
+2) Input format
+
+
+3) Output format
+
+
+4) Exceptional conditions
+
+
+5) Sample input values (include both valid inputs and inputs that create exceptional conditions)
+
+
+6) Sample output values (include the sample output for each sample input)
+
